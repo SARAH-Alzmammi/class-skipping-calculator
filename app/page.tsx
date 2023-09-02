@@ -39,7 +39,7 @@ export default function Home() {
       <input
         type="number"
         value={percentage}
-        onChange={(e)=>handleInputChange(e.target.value,'percentage')}
+        onChange={(e)=>handleInputChange(Number(e.target.value),'percentage')}
         className="w-40   text-black py-2 px-6 rounded"      />
     </div>
 
@@ -50,7 +50,7 @@ export default function Home() {
         <input
             type="number"
             value={number}
-            onChange={(e)=>handleInputChange(e.target.value,  'number')}
+            onChange={(e)=>handleInputChange(Number(e.target.value),  'number')}
             className="w-40 text-black py-2 px-6 rounded"
         />
       </div>
