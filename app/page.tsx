@@ -23,7 +23,7 @@ export default function Home() {
         }
     }
 
-  const handleInputChange = (value,type) => {
+  const handleInputChange = (value:number,type:string) => {
     if (type === 'percentage') {
       setPercentage(value); // Update the value when input changes
     }  else if (type === 'number') {
@@ -61,6 +61,10 @@ export default function Home() {
       <div className="mt-10 flex flex-col items-center gap-2  max-w-52 text-right">
         {status}
       </div>
+
+
+        <p className="text-white text-center opacity-40 bottom-0 absolute"><a href="https://sarah-alzmammi.vercel.app/"  target="_blank"> ©2023 Sarah Alzmammi</a></p>
+
     </main>
   )
 }
